@@ -1,0 +1,438 @@
+{
+  "images": [
+    {
+      "original": "20160207_141859.jpg",
+      "filename": "20160207_141859.jpg",
+      "thumb": "20160207_141859_thumb.jpg",
+      "width": 2560,
+      "height": 1920,
+      "aspect": "landscape",
+      "ratio": 1.33
+    },
+    {
+      "original": "2019-09-21 23.02.03-1.png",
+      "filename": "2019-09-21_23.02.03-1.jpg",
+      "thumb": "2019-09-21_23.02.03-1_thumb.jpg",
+      "width": 1151,
+      "height": 1528,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "20200719_125211.jpg",
+      "filename": "20200719_125211.jpg",
+      "thumb": "20200719_125211_thumb.jpg",
+      "width": 1920,
+      "height": 2560,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "20260818_115204961_iOS.heic",
+      "filename": "20260818_115204961_iOS.jpg",
+      "thumb": "20260818_115204961_iOS_thumb.jpg",
+      "width": 1080,
+      "height": 1920,
+      "aspect": "portrait",
+      "ratio": 0.56
+    },
+    {
+      "original": "20260828_114659574_iOS.jpg",
+      "filename": "20260828_114659574_iOS.jpg",
+      "thumb": "20260828_114659574_iOS_thumb.jpg",
+      "width": 1170,
+      "height": 2080,
+      "aspect": "portrait",
+      "ratio": 0.56
+    },
+    {
+      "original": "20260828_140029726_iOS.heic",
+      "filename": "20260828_140029726_iOS.jpg",
+      "thumb": "20260828_140029726_iOS_thumb.jpg",
+      "width": 1080,
+      "height": 1920,
+      "aspect": "portrait",
+      "ratio": 0.56
+    },
+    {
+      "original": "20260830_154730946_iOS.jpg",
+      "filename": "20260830_154730946_iOS.jpg",
+      "thumb": "20260830_154730946_iOS_thumb.jpg",
+      "width": 2048,
+      "height": 1365,
+      "aspect": "landscape",
+      "ratio": 1.5
+    },
+    {
+      "original": "20260901_132928078_iOS.JPG",
+      "filename": "20260901_132928078_iOS.jpg",
+      "thumb": "20260901_132928078_iOS_thumb.jpg",
+      "width": 1919,
+      "height": 2560,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "20260906_135222292_iOS.jpg",
+      "filename": "20260906_135222292_iOS.jpg",
+      "thumb": "20260906_135222292_iOS_thumb.jpg",
+      "width": 1920,
+      "height": 2560,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "20260906_135512627_iOS.jpg",
+      "filename": "20260906_135512627_iOS.jpg",
+      "thumb": "20260906_135512627_iOS_thumb.jpg",
+      "width": 960,
+      "height": 1280,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "20260906_135638442_iOS.jpg",
+      "filename": "20260906_135638442_iOS.jpg",
+      "thumb": "20260906_135638442_iOS_thumb.jpg",
+      "width": 1280,
+      "height": 717,
+      "aspect": "landscape",
+      "ratio": 1.79
+    },
+    {
+      "original": "20260912_095738838_iOS.heic",
+      "filename": "20260912_095738838_iOS.jpg",
+      "thumb": "20260912_095738838_iOS_thumb.jpg",
+      "width": 1920,
+      "height": 2560,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "77169233606_avatar.png",
+      "filename": "77169233606_avatar.jpg",
+      "thumb": "77169233606_avatar_thumb.jpg",
+      "width": 720,
+      "height": 720,
+      "aspect": "square",
+      "ratio": 1.0
+    },
+    {
+      "original": "CARTOON 153-1.jpg",
+      "filename": "CARTOON_153-1.jpg",
+      "thumb": "CARTOON_153-1_thumb.jpg",
+      "width": 2560,
+      "height": 1920,
+      "aspect": "landscape",
+      "ratio": 1.33
+    },
+    {
+      "original": "FB_IMG_1593249359369.jpg",
+      "filename": "FB_IMG_1593249359369.jpg",
+      "thumb": "FB_IMG_1593249359369_thumb.jpg",
+      "width": 1080,
+      "height": 607,
+      "aspect": "landscape",
+      "ratio": 1.78
+    },
+    {
+      "original": "FB_IMG_1594564324401.jpg",
+      "filename": "FB_IMG_1594564324401.jpg",
+      "thumb": "FB_IMG_1594564324401_thumb.jpg",
+      "width": 800,
+      "height": 1440,
+      "aspect": "portrait",
+      "ratio": 0.56
+    },
+    {
+      "original": "FB_IMG_1616509495259.jpg",
+      "filename": "FB_IMG_1616509495259.jpg",
+      "thumb": "FB_IMG_1616509495259_thumb.jpg",
+      "width": 720,
+      "height": 960,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "FB_IMG_1621751284369.jpg",
+      "filename": "FB_IMG_1621751284369.jpg",
+      "thumb": "FB_IMG_1621751284369_thumb.jpg",
+      "width": 720,
+      "height": 720,
+      "aspect": "square",
+      "ratio": 1.0
+    },
+    {
+      "original": "FB_IMG_1727272619376.jpg",
+      "filename": "FB_IMG_1727272619376.jpg",
+      "thumb": "FB_IMG_1727272619376_thumb.jpg",
+      "width": 1080,
+      "height": 554,
+      "aspect": "landscape",
+      "ratio": 1.95
+    },
+    {
+      "original": "IMG_0116.JPG",
+      "filename": "IMG_0116.jpg",
+      "thumb": "IMG_0116_thumb.jpg",
+      "width": 1242,
+      "height": 2208,
+      "aspect": "portrait",
+      "ratio": 0.56
+    },
+    {
+      "original": "IMG_0419.JPG",
+      "filename": "IMG_0419.jpg",
+      "thumb": "IMG_0419_thumb.jpg",
+      "width": 2048,
+      "height": 1536,
+      "aspect": "landscape",
+      "ratio": 1.33
+    },
+    {
+      "original": "IMG_0559.JPG",
+      "filename": "IMG_0559.jpg",
+      "thumb": "IMG_0559_thumb.jpg",
+      "width": 476,
+      "height": 225,
+      "aspect": "landscape",
+      "ratio": 2.12
+    },
+    {
+      "original": "IMG_0560.JPG",
+      "filename": "IMG_0560.jpg",
+      "thumb": "IMG_0560_thumb.jpg",
+      "width": 325,
+      "height": 578,
+      "aspect": "portrait",
+      "ratio": 0.56
+    },
+    {
+      "original": "IMG_0787(1).JPG",
+      "filename": "IMG_07871.jpg",
+      "thumb": "IMG_07871_thumb.jpg",
+      "width": 1920,
+      "height": 2560,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "IMG_0787.JPG",
+      "filename": "IMG_0787.jpg",
+      "thumb": "IMG_0787_thumb.jpg",
+      "width": 1280,
+      "height": 960,
+      "aspect": "landscape",
+      "ratio": 1.33
+    },
+    {
+      "original": "IMG_0796.JPG",
+      "filename": "IMG_0796.jpg",
+      "thumb": "IMG_0796_thumb.jpg",
+      "width": 1920,
+      "height": 2560,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "IMG_0860.JPG",
+      "filename": "IMG_0860.jpg",
+      "thumb": "IMG_0860_thumb.jpg",
+      "width": 960,
+      "height": 1280,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "IMG_1098.JPG",
+      "filename": "IMG_1098.jpg",
+      "thumb": "IMG_1098_thumb.jpg",
+      "width": 1536,
+      "height": 2048,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "IMG_1228.jpg",
+      "filename": "IMG_1228.jpg",
+      "thumb": "IMG_1228_thumb.jpg",
+      "width": 1290,
+      "height": 2261,
+      "aspect": "portrait",
+      "ratio": 0.57
+    },
+    {
+      "original": "IMG_1476.heif",
+      "filename": "IMG_1476.jpg",
+      "thumb": "IMG_1476_thumb.jpg",
+      "width": 2560,
+      "height": 1923,
+      "aspect": "landscape",
+      "ratio": 1.33
+    },
+    {
+      "original": "IMG_1552.JPG",
+      "filename": "IMG_1552.jpg",
+      "thumb": "IMG_1552_thumb.jpg",
+      "width": 960,
+      "height": 1280,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "IMG_20201210_193031_226.jpg",
+      "filename": "IMG_20201210_193031_226.jpg",
+      "thumb": "IMG_20201210_193031_226_thumb.jpg",
+      "width": 1280,
+      "height": 606,
+      "aspect": "landscape",
+      "ratio": 2.11
+    },
+    {
+      "original": "Screenshot_20211113-153439_Telegram.jpg",
+      "filename": "Screenshot_20211113-153439_Telegram.jpg",
+      "thumb": "Screenshot_20211113-153439_Telegram_thumb.jpg",
+      "width": 1080,
+      "height": 2220,
+      "aspect": "portrait",
+      "ratio": 0.49
+    },
+    {
+      "original": "VideoCapture_20211113-234336.jpg",
+      "filename": "VideoCapture_20211113-234336.jpg",
+      "thumb": "VideoCapture_20211113-234336_thumb.jpg",
+      "width": 720,
+      "height": 1280,
+      "aspect": "portrait",
+      "ratio": 0.56
+    },
+    {
+      "original": "f1a803f4dc110e561143a533f109ab5c.jpeg",
+      "filename": "f1a803f4dc110e561143a533f109ab5c.jpg",
+      "thumb": "f1a803f4dc110e561143a533f109ab5c_thumb.jpg",
+      "width": 1512,
+      "height": 2016,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "ice_2016-09-19-06-21-04-289-1.jpg",
+      "filename": "ice_2016-09-19-06-21-04-289-1.jpg",
+      "thumb": "ice_2016-09-19-06-21-04-289-1_thumb.jpg",
+      "width": 1920,
+      "height": 2560,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "received_1471169836373035.jpeg",
+      "filename": "received_1471169836373035.jpg",
+      "thumb": "received_1471169836373035_thumb.jpg",
+      "width": 1536,
+      "height": 2048,
+      "aspect": "portrait",
+      "ratio": 0.75
+    },
+    {
+      "original": "received_161926641924745.jpeg",
+      "filename": "received_161926641924745.jpg",
+      "thumb": "received_161926641924745_thumb.jpg",
+      "width": 2048,
+      "height": 1152,
+      "aspect": "landscape",
+      "ratio": 1.78
+    }
+  ],
+  "videos": [
+    {
+      "original": "-1230306435836029050.mp4",
+      "filename": "-1230306435836029050.mp4",
+      "poster": "-1230306435836029050_poster.jpg",
+      "width": 464,
+      "height": 848,
+      "duration": 3.9,
+      "aspect": "portrait"
+    },
+    {
+      "original": "20260815_130938000_iOS.MP4",
+      "filename": "20260815_130938000_iOS.mp4",
+      "poster": "20260815_130938000_iOS_poster.jpg",
+      "width": 720,
+      "height": 1280,
+      "duration": 7.4,
+      "aspect": "portrait"
+    },
+    {
+      "original": "20260819_104802000_iOS.MOV",
+      "filename": "20260819_104802000_iOS.mp4",
+      "poster": "20260819_104802000_iOS_poster.jpg",
+      "width": 1080,
+      "height": 1920,
+      "duration": 13.8,
+      "aspect": "portrait"
+    },
+    {
+      "original": "20260825_150810000_iOS.mp4",
+      "filename": "20260825_150810000_iOS.mp4",
+      "poster": "20260825_150810000_iOS_poster.jpg",
+      "width": 720,
+      "height": 1280,
+      "duration": 11.9,
+      "aspect": "portrait"
+    },
+    {
+      "original": "20260828_135950000_iOS.MOV",
+      "filename": "20260828_135950000_iOS.mp4",
+      "poster": "20260828_135950000_iOS_poster.jpg",
+      "width": 1080,
+      "height": 1920,
+      "duration": 6.7,
+      "aspect": "portrait"
+    },
+    {
+      "original": "70f249cdcaf0457280fd7e6d5ab06b6c.mov",
+      "filename": "70f249cdcaf0457280fd7e6d5ab06b6c.mp4",
+      "poster": "70f249cdcaf0457280fd7e6d5ab06b6c_poster.jpg",
+      "width": 1080,
+      "height": 1920,
+      "duration": 5.9,
+      "aspect": "portrait"
+    },
+    {
+      "original": "IMG_0029.MOV",
+      "filename": "IMG_0029.mp4",
+      "poster": "IMG_0029_poster.jpg",
+      "width": 1920,
+      "height": 1080,
+      "duration": 7.5,
+      "aspect": "landscape"
+    },
+    {
+      "original": "IMG_0531.MOV",
+      "filename": "IMG_0531.mp4",
+      "poster": "IMG_0531_poster.jpg",
+      "width": 1080,
+      "height": 1920,
+      "duration": 12.0,
+      "aspect": "portrait"
+    },
+    {
+      "original": "IMG_1268.MOV",
+      "filename": "IMG_1268.mp4",
+      "poster": "IMG_1268_poster.jpg",
+      "width": 1080,
+      "height": 1920,
+      "duration": 26.7,
+      "aspect": "portrait"
+    },
+    {
+      "original": "IMG_9788.MOV",
+      "filename": "IMG_9788.mp4",
+      "poster": "IMG_9788_poster.jpg",
+      "width": 1080,
+      "height": 1920,
+      "duration": 45.7,
+      "aspect": "portrait"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Raw untouched backup media archive
+fileimg$video/
+
+# Scratch & temporary test files
+test_autoplay.html
+test_startup_audio.html
+.tools/
+
+# OS system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

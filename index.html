@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chhim Putheara — 13 November (Another Chapter of My Life)</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Fixed Stardust / Cosmos Background Canvas -->
+  <canvas id="space-canvas"></canvas>
+  <div class="film-grain"></div>
+
+  <!-- ==========================================
+       SECTION 3: OPENING SCREEN (CINEMATIC GATE)
+       ========================================== -->
+  <div id="opening-screen">
+    <!-- Animated background aura & cosmic rings -->
+    <div class="intro-bg-glow"></div>
+    <div class="intro-orbit-ring"></div>
+    <div class="intro-orbit-ring ring-secondary"></div>
+
+    <div class="intro-card-panel">
+      <!-- Floating VIP Crown & Animated Avatar -->
+      <div class="intro-avatar-container">
+        <div class="intro-crown-anim" title="Long Live The Legend!">👑</div>
+        <div class="intro-avatar-halo">
+          <img src="assets/images/att.KGZgOqLBel2HCPN63qN__nVQqGVovSh7y_V1u1-aiZ8.jpg" alt="Chhim Putheara" class="intro-avatar-img">
+        </div>
+        <div class="intro-verified-tag">
+          <span class="badge-check">✓</span> <span class="dyn-age">24</span>-YEAR CERTIFIED LEGEND
+        </div>
+      </div>
+
+      <!-- Secret Easter Egg Date Trigger -->
+      <div class="gate-badge" id="date-secret-trigger" title="Click 5 times for a secret easter egg!">
+        CHHIM PUTHEARA &bull; 13 &bull; 11 &bull; 2002 &bull; CHAPTER <span class="dyn-chapter">24</span>
+      </div>
+      
+      <!-- Powerful Headline -->
+      <h1 class="gate-line-1">
+        <span class="dyn-age">24</span> Years of My Story.
+      </h1>
+      
+      <p class="intro-tagline">
+        Twenty-four years in the making. Unstoppable energy, wild memories, and the legend still being written.
+      </p>
+
+      <!-- Dynamic Funny Quote / Truth Carousel -->
+      <div class="intro-quote-capsule" id="intro-funny-card">
+        <div class="quote-capsule-top">
+          <span class="capsule-label">🔥 BIRTHDAY TRUTH OF THE DAY</span>
+          <button class="btn-dice-shuffle" id="btn-shuffle-intro-quote" title="Click for another hilarious truth!">
+            🎲 Roll Again
+          </button>
+        </div>
+        <p class="intro-quote-text" id="intro-funny-text">
+          &ldquo;If you can't defeat them, join them. 🤝&rdquo;
+        </p>
+      </div>
+
+      <!-- Interactive Actions Cluster -->
+      <div class="intro-buttons-cluster">
+        <button class="btn-enter btn-hype-enter" id="btn-enter-story">
+          <span class="btn-icon">⚡</span>
+          <span class="btn-text">ENTER WITH MAXIMUM HYPE &rarr; <span class="dyn-age">24</span>-YEAR STORY</span>
+          <span class="btn-arrow">&rarr;</span>
+        </button>
+
+        <div class="intro-fun-bar">
+          <button class="btn-fun-pill" id="btn-intro-confetti" title="Blast celebratory confetti!">
+            🎉 Pop Confetti
+          </button>
+          <button class="btn-fun-pill" id="btn-intro-croc" title="Summon dancing croc meme energy!">
+            🐊 Croc Energy
+          </button>
+        </div>
+      </div>
+
+      <div class="intro-hint-note">
+        <span>🚀 Click above to unleash fireworks, music & enter your 24-Year Story</span>
+      </div>
+    </div>
+
+    <!-- Floating Mini Croc Easter Egg Popup on Intro Gate -->
+    <div class="intro-croc-modal" id="intro-croc-modal">
+      <div class="croc-modal-card">
+        <button class="croc-modal-close" id="btn-close-croc-modal" title="Close">&times;</button>
+        <div class="croc-modal-header">
+          <span>🐊 DANCING CROCODILE VIBES LEVEL 1000</span>
+        </div>
+        <div class="croc-vid-wrapper">
+          <video class="croc-video-elem" id="intro-croc-vid" src="assets/videos/f20e996c201556d703a0d6cacd2e8c79_720w.mp4" playsinline loop controls poster="assets/videos/posters/f20e996c201556d703a0d6cacd2e8c79_720w_poster.jpg"></video>
+        </div>
+        <p class="croc-quote-caption">&ldquo;Keep moving forward with 100% confidence, even if you look this ridiculously happy.&rdquo;</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FLOATING NAVIGATION & AUDIO CONTROLLER
+       ========================================== -->
+  <nav class="floating-nav-bar">
+    <a href="#" class="nav-brand">Putheara &bull; 13.11</a>
+    
+    <ul class="nav-links">
+      <li><a href="#hero"><span class="dyn-age">24</span>-Year Story</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#family">Family</a></li>
+      <li><a href="#friends">Friends</a></li>
+      <li><a href="#love">Love</a></li>
+      <li><a href="#clips">Motion</a></li>
+      <li><a href="#lessons">Lessons</a></li>
+      <li><a href="#dreams">Dreams</a></li>
+      <li><a href="#archive">Archive</a></li>
+      <li><a href="#vault">Time Capsule</a></li>
+      <li><a href="#birthday">Celebration</a></li>
+    </ul>
+
+    <button class="music-toggle-btn" id="music-toggle" title="Toggle Soundtrack">
+      <div class="sound-bars">
+        <span class="sound-bar"></span>
+        <span class="sound-bar"></span>
+        <span class="sound-bar"></span>
+        <span class="sound-bar"></span>
+      </div>
+      <span>Soundtrack</span>
+    </button>
+  </nav>
+
+  <!-- ==========================================
+       MAIN WRAPPER & SECTIONS
+       ========================================== -->
+  <main class="main-wrapper">
+
+    <!-- ==========================================
+         SECTION 4: HERO & BIRTHDAY COUNTDOWN
+         ========================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-chapter-pill reveal-on-scroll">CHHIM PUTHEARA &bull; CHAPTER <span class="dyn-chapter">24</span> (2002 &mdash; <span class="dyn-year">2026</span>)</div>
+      
+      <h1 class="hero-main-title reveal-on-scroll">
+        <span class="gold-gradient-text"><span class="dyn-age">24</span> Years of My Story</span><br>
+        13 November &bull; Another Chapter
+      </h1>
+      
+      <p class="hero-quote reveal-on-scroll">
+        &ldquo;Twenty-four years of heartbeats, laughter, lessons, and dreams. From the boy who looked at the world with curiosity, to the man standing strong today &mdash; this is my life, my story, my celebration.&rdquo;
+      </p>
+
+      <!-- 24 Years Journey Stats Grid -->
+      <div class="story-stats-grid reveal-on-scroll">
+        <div class="story-stat-card">
+          <span class="stat-num dyn-age">24</span>
+          <span class="stat-sub">Years Lived</span>
+        </div>
+        <div class="story-stat-card">
+          <span class="stat-num dyn-days">8,766+</span>
+          <span class="stat-sub">Days of Memories</span>
+        </div>
+        <div class="story-stat-card">
+          <span class="stat-num">100%</span>
+          <span class="stat-sub">Real & Unstoppable</span>
+        </div>
+        <div class="story-stat-card">
+          <span class="stat-num">&infin;</span>
+          <span class="stat-sub">Dreams Ahead</span>
+        </div>
+      </div>
+
+      <!-- Birthday Countdown Widget -->
+      <div class="countdown-container reveal-on-scroll">
+        <div class="countdown-label">Birthday Countdown &bull; 13 November</div>
+        
+        <div class="countdown-grid" id="countdown-grid">
+          <div class="countdown-box">
+            <span class="countdown-number" id="count-days">00</span>
+            <span class="countdown-unit">Days</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-number" id="count-hours">00</span>
+            <span class="countdown-unit">Hours</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-number" id="count-mins">00</span>
+            <span class="countdown-unit">Minutes</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-number" id="count-secs">00</span>
+            <span class="countdown-unit">Seconds</span>
+          </div>
+        </div>
+
+        <div class="birthday-arrived-banner" id="birthday-arrived-banner">
+          Today is my day. &#10084;&#65039;
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 11: MEMORY TIMELINE
+         ========================================== -->
+    <section id="timeline">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Chronicles</span>
+        <h2 class="section-title">The Memory Timeline</h2>
+        <p class="section-subtitle">2002 &rarr; Childhood &rarr; Growing Up &rarr; School &rarr; Friends &rarr; Challenges &rarr; Dreams &rarr; Today &rarr; The Future</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-spine"></div>
+
+        <!-- 2002 - Origin -->
+        <div class="timeline-item left reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">13 November 2002</div>
+            <div class="timeline-stage">The Genesis</div>
+            <p class="timeline-desc">The day Chhim Putheara came into this world. A quiet start to a story filled with learning, perseverance, and dreams.</p>
+          </div>
+        </div>
+
+        <!-- Childhood -->
+        <div class="timeline-item right reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">Childhood Days</div>
+            <div class="timeline-stage">Innocence & Wonder</div>
+            <p class="timeline-desc">When days felt infinite, curiosity was boundless, and every small memory was pure gold.</p>
+            <div class="media-polaroid" data-lightbox-src="assets/images/20160207_141859.jpg" data-lightbox-caption="Early days &bull; A memory I want to keep">
+              <img src="assets/images/thumbnails/20160207_141859_thumb.jpg" alt="Childhood Memory" loading="lazy">
+              <div class="polaroid-caption">A memory I want to keep.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Growing Up -->
+        <div class="timeline-item left reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">Growing Up (2016)</div>
+            <div class="timeline-stage">Finding My Footsteps</div>
+            <p class="timeline-desc">Stepping through the seasons where the world grew larger, discovering interests and individuality.</p>
+            <div class="media-polaroid" data-lightbox-src="assets/images/ice_2016-09-19-06-21-04-289-1.jpg" data-lightbox-caption="Youth seasons &bull; A memory I want to keep">
+              <img src="assets/images/thumbnails/ice_2016-09-19-06-21-04-289-1_thumb.jpg" alt="Youth Memory" loading="lazy">
+              <div class="polaroid-caption">Growing into myself.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- School & Milestones -->
+        <div class="timeline-item right reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">School & Milestones (2019 - 2020)</div>
+            <div class="timeline-stage">Classrooms & Unforgettable Afternoons</div>
+            <p class="timeline-desc">Shared desks, inside jokes, and the unmistakable feeling of growing up alongside wonderful people.</p>
+            <div class="media-polaroid" data-lightbox-src="assets/images/2019-09-21_23.02.03-1.jpg" data-lightbox-caption="School & Youth Chapter">
+              <img src="assets/images/thumbnails/2019-09-21_23.02.03-1_thumb.jpg" alt="School milestone" loading="lazy">
+              <div class="polaroid-caption">A chapter written in friendship.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Friends & Formative Moments -->
+        <div class="timeline-item left reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">Formative Years (2020 - 2021)</div>
+            <div class="timeline-stage">Bonds & Smiles</div>
+            <p class="timeline-desc">Late night chats, milestone celebrations, and friends who made every single day brighter.</p>
+            <div class="media-polaroid" data-lightbox-src="assets/images/IMG_20201210_193031_226.jpg" data-lightbox-caption="Formative Days &bull; A memory I want to keep">
+              <img src="assets/images/thumbnails/IMG_20201210_193031_226_thumb.jpg" alt="Formative memories" loading="lazy">
+              <div class="polaroid-caption">Cherished moments.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Challenges Faced -->
+        <div class="timeline-item right reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">Challenges & Resilience (2023)</div>
+            <div class="timeline-stage">Building Inner Strength</div>
+            <p class="timeline-desc">Not all days were easy. But every hurdle taught me patience, resolve, and how to rise up stronger.</p>
+            <div class="media-polaroid" data-lightbox-src="assets/images/IMG_07871.jpg" data-lightbox-caption="Strength in every step">
+              <img src="assets/images/thumbnails/IMG_07871_thumb.jpg" alt="Challenges and growth" loading="lazy">
+              <div class="polaroid-caption">Stronger than yesterday.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maturing & Becoming -->
+        <div class="timeline-item left reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">Growth & Horizons (2024 - 2025)</div>
+            <div class="timeline-stage">Expanding My Vision</div>
+            <p class="timeline-desc">Finding confidence in who I am and stepping boldly toward the future I want to craft.</p>
+            <div class="media-polaroid" data-lightbox-src="assets/images/IMG_1228.jpg" data-lightbox-caption="Growth & self discovery">
+              <img src="assets/images/thumbnails/IMG_1228_thumb.jpg" alt="Self discovery" loading="lazy">
+              <div class="polaroid-caption">Looking toward the horizon.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Today -->
+        <div class="timeline-item right reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">Today &bull; Present Day (2026)</div>
+            <div class="timeline-stage">Standing Here & Now</div>
+            <p class="timeline-desc">Grateful for every single step. Celebrating another year of life, love, and endless possibility.</p>
+            <div class="media-polaroid" data-lightbox-src="assets/images/IMG_0796.jpg" data-lightbox-caption="Chhim Putheara &bull; Today">
+              <img src="assets/images/thumbnails/IMG_0796_thumb.jpg" alt="Today" loading="lazy">
+              <div class="polaroid-caption">Still becoming me.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Future -->
+        <div class="timeline-item left reveal-on-scroll">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">The Future</div>
+            <div class="timeline-stage">Unwritten Horizons</div>
+            <p class="timeline-desc">The open road ahead. Unwritten chapters, larger ambitions, deeper gratitude, and the thrill of tomorrow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 8: FAMILY SECTION
+         ========================================== -->
+    <section class="family-section" id="family">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">&#10084;&#65039; Roots</span>
+        <h2 class="section-title">My Family</h2>
+        <p class="section-subtitle">&ldquo;Everything I become will always carry a part of you.&rdquo;</p>
+      </div>
+
+      <div class="quote-block reveal-on-scroll">
+        <p>
+          &ldquo;Before I became who I am today, there were people who stood beside me, supported me, worried about me, and loved me without asking for anything in return.<br><br>
+          To my family, thank you for being part of every chapter of my life.&rdquo;
+        </p>
+        <div class="quote-author">With Eternal Gratitude &bull; Chhim Putheara</div>
+      </div>
+
+      <!-- Family Gallery Grid -->
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/CARTOON_153-1.jpg" data-lightbox-caption="Family Warmth &bull; A memory I want to keep">
+          <img src="assets/images/thumbnails/CARTOON_153-1_thumb.jpg" alt="Family Memory" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Family</span>
+            <div class="gallery-item-title">Unconditional Love</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/IMG_1476.jpg" data-lightbox-caption="Family Moments &bull; Shared Smiles">
+          <img src="assets/images/thumbnails/IMG_1476_thumb.jpg" alt="Family Moments" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Home</span>
+            <div class="gallery-item-title">Safe Harbors</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/IMG_0419.jpg" data-lightbox-caption="Every step supported by you">
+          <img src="assets/images/thumbnails/IMG_0419_thumb.jpg" alt="Family Chapter" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Gratitude</span>
+            <div class="gallery-item-title">Part of Every Chapter</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/IMG_0860.jpg" data-lightbox-caption="Forever in my heart">
+          <img src="assets/images/thumbnails/IMG_0860_thumb.jpg" alt="Family Bond" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Roots</span>
+            <div class="gallery-item-title">Where I Began</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/IMG_1098.jpg" data-lightbox-caption="Family bond & guidance">
+          <img src="assets/images/thumbnails/IMG_1098_thumb.jpg" alt="Family bond" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Warmth</span>
+            <div class="gallery-item-title">Quiet Strength</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/IMG_1552.jpg" data-lightbox-caption="Gentle moments at home">
+          <img src="assets/images/thumbnails/IMG_1552_thumb.jpg" alt="Gentle moments" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Home</span>
+            <div class="gallery-item-title">Cherished Peace</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/IMG_0559.jpg" data-lightbox-caption="A memory I want to keep">
+          <img src="assets/images/thumbnails/IMG_0559_thumb.jpg" alt="Memory card" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Memory</span>
+            <div class="gallery-item-title">Precious Days</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/IMG_0560.jpg" data-lightbox-caption="Family legacy & love">
+          <img src="assets/images/thumbnails/IMG_0560_thumb.jpg" alt="Family legacy" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Legacy</span>
+            <div class="gallery-item-title">Roots of Strength</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 9: FRIENDS SECTION
+         ========================================== -->
+    <section id="friends">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">&#129309; Companions</span>
+        <h2 class="section-title">The People Who Made Life Fun</h2>
+        <p class="section-subtitle">
+          &ldquo;Life would not be the same without the people who laughed with me, stayed with me during difficult days, created stupid memories with me, and made ordinary days unforgettable.&rdquo;
+        </p>
+      </div>
+      <div class="friends-slider-container reveal-on-scroll">
+        <!-- Navigation Buttons -->
+        <button class="slider-nav-btn prev-btn" id="friends-prev" aria-label="Previous Slide">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+
+        <div class="friends-slider-viewport" id="friends-viewport">
+          <div class="friends-track" id="friends-track">
+          <div class="friend-card" data-lightbox-src="assets/images/FB_IMG_1593249359369.jpg" data-lightbox-caption="Good times with genuine friends">
+            <div class="friend-card-media">
+              <img src="assets/images/thumbnails/FB_IMG_1593249359369_thumb.jpg" alt="Good times" loading="lazy">
+            </div>
+            <div class="friend-card-body">
+              <span class="friend-badge">Good times</span>
+              <p class="friend-card-text">Laughter that echoed until late nights.</p>
+          </div>
+        </div>
+
+          <div class="friend-card" data-lightbox-src="assets/images/FB_IMG_1594564324401.jpg" data-lightbox-caption="Crazy moments & unforgettable adventures">
+            <div class="friend-card-media">
+              <img src="assets/images/thumbnails/FB_IMG_1594564324401_thumb.jpg" alt="Crazy moments" loading="lazy">
+            </div>
+            <div class="friend-card-body">
+              <span class="friend-badge">Crazy moments</span>
+              <p class="friend-card-text">Spontaneous decisions that became legends.</p>
+            </div>
+          </div>
+
+          <div class="friend-card" data-lightbox-src="assets/images/20200719_125211.jpg" data-lightbox-caption="Unforgettable days spent laughing together">
+            <div class="friend-card-media">
+              <img src="assets/images/thumbnails/20200719_125211_thumb.jpg" alt="Unforgettable days" loading="lazy">
+            </div>
+            <div class="friend-card-body">
+              <span class="friend-badge">Unforgettable days</span>
+              <p class="friend-card-text">Days that didn't need a plan to be perfect.</p>
+            </div>
+          </div>
+
+          <div class="friend-card" data-lightbox-src="assets/images/Screenshot_20211113-153439_Telegram.jpg" data-lightbox-caption="People I am grateful for &bull; Birthday wishes">
+            <div class="friend-card-media">
+              <img src="assets/images/thumbnails/Screenshot_20211113-153439_Telegram_thumb.jpg" alt="Birthday wishes" loading="lazy">
+            </div>
+            <div class="friend-card-body">
+              <span class="friend-badge">People I am grateful for</span>
+              <p class="friend-card-text">Heartfelt wishes that made my birthday special.</p>
+            </div>
+          </div>
+
+          <div class="friend-card" data-lightbox-src="assets/images/FB_IMG_1616509495259.jpg" data-lightbox-caption="Crazy moments & genuine bonds">
+            <div class="friend-card-media">
+              <img src="assets/images/thumbnails/FB_IMG_1616509495259_thumb.jpg" alt="Crazy moments" loading="lazy">
+            </div>
+            <div class="friend-card-body">
+              <span class="friend-badge">Crazy moments</span>
+              <p class="friend-card-text">Side by side through thick and thin.</p>
+            </div>
+          </div>
+
+          <div class="friend-card" data-lightbox-src="assets/images/received_1471169836373035.jpg" data-lightbox-caption="People I am grateful for">
+            <div class="friend-card-media">
+              <img src="assets/images/thumbnails/received_1471169836373035_thumb.jpg" alt="Friendship" loading="lazy">
+            </div>
+            <div class="friend-card-body">
+              <span class="friend-badge">People I am grateful for</span>
+              <p class="friend-card-text">True comrades who stood with me.</p>
+            </div>
+          </div>
+
+          <div class="friend-card" data-lightbox-src="assets/images/FB_IMG_1621751284369.jpg" data-lightbox-caption="Unforgettable days & joyful memories">
+            <div class="friend-card-media">
+              <img src="assets/images/thumbnails/FB_IMG_1621751284369_thumb.jpg" alt="Unforgettable memory" loading="lazy">
+            </div>
+            <div class="friend-card-body">
+              <span class="friend-badge">Unforgettable days</span>
+              <p class="friend-card-text">Smiles that remind me of simpler times.</p>
+            </div>
+          </div>
+
+          <div class="friend-card" data-lightbox-src="assets/images/f1a803f4dc110e561143a533f109ab5c.jpg" data-lightbox-caption="Good times & adventurous days">
+            <div class="friend-card-media">
+              <img src="assets/images/thumbnails/f1a803f4dc110e561143a533f109ab5c_thumb.jpg" alt="Good times" loading="lazy">
+            </div>
+            <div class="friend-card-body">
+              <span class="friend-badge">Good times</span>
+              <p class="friend-card-text">Every adventure better with good company.</p>
+            </div>
+          </div>
+
+          <div class="friend-card" data-lightbox-src="assets/images/received_161926641924745.jpg" data-lightbox-caption="People I am grateful for">
+            <div class="friend-card-media">
+              <img src="assets/images/thumbnails/received_161926641924745_thumb.jpg" alt="Grateful" loading="lazy">
+            </div>
+            <div class="friend-card-body">
+              <span class="friend-badge">People I am grateful for</span>
+              <p class="friend-card-text">The people who made the years unforgettable.</p>
+            </div>
+          </div>
+
+          <div class="friend-card" data-lightbox-src="assets/images/FB_IMG_1727272619376.jpg" data-lightbox-caption="Crazy moments & smiles">
+            <div class="friend-card-media">
+              <img src="assets/images/thumbnails/FB_IMG_1727272619376_thumb.jpg" alt="Crazy moments" loading="lazy">
+            </div>
+            <div class="friend-card-body">
+              <span class="friend-badge">Crazy moments</span>
+              <p class="friend-card-text">Moments that bring an instant grin.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <button class="slider-nav-btn next-btn" id="friends-next" aria-label="Next Slide">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+
+        <!-- Slider Pagination Indicators -->
+        <div class="slider-indicators-wrap">
+          <div class="slider-dots" id="friends-dots"></div>
+          <div class="slider-counter" id="friends-counter">1 / 10</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 10: LOVE SECTION (USER SPECIFIED)
+         ========================================== -->
+    <section class="love-section" id="love">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">&#10084;&#65039; Romance & Deep Affection</span>
+        <h2 class="section-title">Love & The People Close To My Heart</h2>
+      </div>
+
+      <div class="love-showcase">
+        <!-- USER'S EXPLICITLY REQUESTED LOVE IMAGE -->
+        <div class="love-card-main reveal-on-scroll" data-lightbox-src="assets/images/20260906_135222292_iOS.jpg" data-lightbox-caption="Chhim Putheara &bull; Love & The People Close To My Heart">
+          <img src="assets/images/20260906_135222292_iOS.jpg" alt="Love & Heart Centerpiece" loading="lazy">
+        </div>
+
+        <div class="love-content-text reveal-on-scroll">
+          <p class="font-serif italic" style="font-size: 1.5rem; color: var(--gold-light); margin-bottom: 1.5rem; line-height: 1.6;">
+            &ldquo;Some people enter our lives and quietly become part of our story.&rdquo;
+          </p>
+          <p>
+            Thank you for the moments, the conversations, the smiles, and everything that made my journey more meaningful.
+          </p>
+          <p>
+            In a noisy world, finding peace in your presence is a quiet miracle. Here's to every shared laugh, gentle look, and sweet chapter ahead.
+          </p>
+          
+          <!-- Companion Love Photos -->
+          <div style="display: flex; gap: 1rem; margin-top: 1.8rem;">
+            <div class="media-polaroid" style="width: 140px; padding: 6px 6px 14px 6px;" data-lightbox-src="assets/images/20260906_135512627_iOS.jpg" data-lightbox-caption="Shared smiles & sweet moments">
+              <img src="assets/images/thumbnails/20260906_135512627_iOS_thumb.jpg" alt="Sweet memory" loading="lazy" style="height: 120px; object-fit: cover;">
+              <div class="polaroid-caption" style="font-size: 0.75rem; margin-top: 5px;">Together</div>
+            </div>
+            <div class="media-polaroid" style="width: 140px; padding: 6px 6px 14px 6px;" data-lightbox-src="assets/images/20260906_135638442_iOS.jpg" data-lightbox-caption="Unforgettable memories together">
+              <img src="assets/images/thumbnails/20260906_135638442_iOS_thumb.jpg" alt="Date memory" loading="lazy" style="height: 120px; object-fit: cover;">
+              <div class="polaroid-caption" style="font-size: 0.75rem; margin-top: 5px;">Pure Joy</div>
+            </div>
+            <div class="media-polaroid" style="width: 140px; padding: 6px 6px 14px 6px;" data-lightbox-src="assets/images/20260830_154730946_iOS.jpg" data-lightbox-caption="Moments close to heart">
+              <img src="assets/images/thumbnails/20260830_154730946_iOS_thumb.jpg" alt="Heart memory" loading="lazy" style="height: 120px; object-fit: cover;">
+              <div class="polaroid-caption" style="font-size: 0.75rem; margin-top: 5px;">Always</div>
+            </div>
+          </div>
+
+          <div class="font-script" style="margin-top: 2rem;">Always & Forever</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CINEMATIC MOTION MEMORIES (ALL 10 VIDEOS)
+         ========================================== -->
+    <section id="clips">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">&#127916; Motion Memories</span>
+        <h2 class="section-title">Moments in Motion</h2>
+        <p class="section-subtitle">Real moments, living smiles, and spontaneous snapshots across the years.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/videos/20260815_130938000_iOS.mp4" data-lightbox-type="video" data-lightbox-caption="Memories in Motion &bull; Summer 2026">
+          <video src="assets/videos/20260815_130938000_iOS.mp4" poster="assets/videos/posters/20260815_130938000_iOS_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">&#9654; Video Clip</span>
+            <div class="gallery-item-title">Memories in Motion</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/videos/20260819_104802000_iOS.mp4" data-lightbox-type="video" data-lightbox-caption="Unscripted moments of joy">
+          <video src="assets/videos/20260819_104802000_iOS.mp4" poster="assets/videos/posters/20260819_104802000_iOS_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">&#9654; Video Clip</span>
+            <div class="gallery-item-title">Unscripted Moments</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/videos/20260825_150810000_iOS.mp4" data-lightbox-type="video" data-lightbox-caption="Everyday vibes & laughter">
+          <video src="assets/videos/20260825_150810000_iOS.mp4" poster="assets/videos/posters/20260825_150810000_iOS_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">&#9654; Video Clip</span>
+            <div class="gallery-item-title">Living The Moment</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/videos/20260828_135950000_iOS.mp4" data-lightbox-type="video" data-lightbox-caption="Summer Echoes &bull; Chhim Putheara">
+          <video src="assets/videos/20260828_135950000_iOS.mp4" poster="assets/videos/posters/20260828_135950000_iOS_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">&#9654; Video Clip</span>
+            <div class="gallery-item-title">Summer Echoes</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/videos/-1230306435836029050.mp4" data-lightbox-type="video" data-lightbox-caption="Spontaneous fun & laughs">
+          <video src="assets/videos/-1230306435836029050.mp4" poster="assets/videos/posters/-1230306435836029050_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">&#9654; Video Clip</span>
+            <div class="gallery-item-title">Spontaneous Joy</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/videos/70f249cdcaf0457280fd7e6d5ab06b6c.mp4" data-lightbox-type="video" data-lightbox-caption="Short memorable moment">
+          <video src="assets/videos/70f249cdcaf0457280fd7e6d5ab06b6c.mp4" poster="assets/videos/posters/70f249cdcaf0457280fd7e6d5ab06b6c_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">&#9654; Video Clip</span>
+            <div class="gallery-item-title">Life in Motion</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/videos/IMG_0029.mp4" data-lightbox-type="video" data-lightbox-caption="Captured Chapter &bull; A memory I want to keep">
+          <video src="assets/videos/IMG_0029.mp4" poster="assets/videos/posters/IMG_0029_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">&#9654; Video Clip</span>
+            <div class="gallery-item-title">Captured Chapter</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/videos/IMG_0531.mp4" data-lightbox-type="video" data-lightbox-caption="Atmospheric moments">
+          <video src="assets/videos/IMG_0531.mp4" poster="assets/videos/posters/IMG_0531_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">&#9654; Video Clip</span>
+            <div class="gallery-item-title">Quiet Vibrance</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/videos/IMG_1268.mp4" data-lightbox-type="video" data-lightbox-caption="Unforgettable scene in motion">
+          <video src="assets/videos/IMG_1268.mp4" poster="assets/videos/posters/IMG_1268_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">&#9654; Video Clip</span>
+            <div class="gallery-item-title">Endless Horizons</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/videos/IMG_9788.mp4" data-lightbox-type="video" data-lightbox-caption="Grand memory celebration">
+          <video src="assets/videos/IMG_9788.mp4" poster="assets/videos/posters/IMG_9788_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">&#9654; Video Clip</span>
+            <div class="gallery-item-title">Grand Chapter</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 12: THINGS I LEARNED SECTION
+         ========================================== -->
+    <section id="lessons">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">&#127891; Wisdom</span>
+        <h2 class="section-title">Things Life Has Taught Me</h2>
+        <p class="section-subtitle">Hard-won lessons gathered across another year of living.</p>
+      </div>
+
+      <div class="lessons-grid">
+        <div class="lesson-card reveal-on-scroll">
+          <span class="lesson-number">01</span>
+          <p class="lesson-text">&ldquo;Not every person stays forever.&rdquo;</p>
+        </div>
+
+        <div class="lesson-card reveal-on-scroll">
+          <span class="lesson-number">02</span>
+          <p class="lesson-text">&ldquo;Some endings create new beginnings.&rdquo;</p>
+        </div>
+
+        <div class="lesson-card reveal-on-scroll">
+          <span class="lesson-number">03</span>
+          <p class="lesson-text">&ldquo;Success takes longer than we imagine.&rdquo;</p>
+        </div>
+
+        <div class="lesson-card reveal-on-scroll">
+          <span class="lesson-number">04</span>
+          <p class="lesson-text">&ldquo;Time moves faster than we think.&rdquo;</p>
+        </div>
+
+        <div class="lesson-card reveal-on-scroll">
+          <span class="lesson-number">05</span>
+          <p class="lesson-text">&ldquo;Family matters.&rdquo;</p>
+        </div>
+
+        <div class="lesson-card reveal-on-scroll">
+          <span class="lesson-number">06</span>
+          <p class="lesson-text">&ldquo;Real friends are precious.&rdquo;</p>
+        </div>
+
+        <div class="lesson-card reveal-on-scroll">
+          <span class="lesson-number">07</span>
+          <p class="lesson-text">&ldquo;Keep moving forward.&rdquo;</p>
+        </div>
+
+        <div class="lesson-card reveal-on-scroll">
+          <span class="lesson-number">08</span>
+          <p class="lesson-text">&ldquo;Become someone your future self will be proud of.&rdquo;</p>
+        </div>
+      </div>
+    
+      <!-- ==========================================
+           FUNNY WORDS OF WISDOM (FEATURED VIDEO QUOTES)
+           ========================================== -->
+      <div class="section-header reveal-on-scroll" style="margin-top: 5rem; margin-bottom: 2.5rem;">
+        <span class="section-tag" style="background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.4); color: #fbbf24;">&#128514; Words of Wisdom &amp; Humor</span>
+        <h3 class="section-title" style="font-size: clamp(1.8rem, 3vw, 2.5rem);">The Lighter Side of Wisdom</h3>
+        <p class="section-subtitle">Because life is too short to take everything seriously.</p>
+      </div>
+
+      <div class="video-wisdom-grid">
+        <!-- Video Quote 1: Minecraft Pig Meme -->
+        <div class="video-quote-card reveal-on-scroll">
+          <div class="video-quote-media" data-lightbox-src="assets/videos/AQNZxaFYIK9wvfkxaIEiRL0nt2YNGToAFTGVYw7raQ722TXuPVp0M56ir9b--qQtdBkcVU8SdlbjqTboO0L4QL6qhJNE5mnmhG-Of-K2.mp4" data-lightbox-type="video" data-lightbox-caption="&ldquo;No one can use you if you are useless&rdquo; &bull; Legend 'with a crown'">
+            <video src="assets/videos/AQNZxaFYIK9wvfkxaIEiRL0nt2YNGToAFTGVYw7raQ722TXuPVp0M56ir9b--qQtdBkcVU8SdlbjqTboO0L4QL6qhJNE5mnmhG-Of-K2.mp4" poster="assets/videos/posters/AQNZxaFYIK9wvfkxaIEiRL0nt2YNGToAFTGVYw7raQ722TXuPVp0M56ir9b_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+            <div class="video-play-hint">&#9654; Play with sound in Lightbox</div>
+          </div>
+          <div class="video-quote-body">
+            <span class="video-quote-tag">&#128081; Unbeatable Life Logic</span>
+            <blockquote class="video-quote-text">
+              &ldquo;No one can use you if you are useless.&rdquo;
+            </blockquote>
+            <div class="video-quote-author">~ Legend 'with a crown' &#128055;&#128081;</div>
+          </div>
+        </div>
+
+        <!-- Video Quote 2: Dancing Crocodile Meme -->
+        <div class="video-quote-card reveal-on-scroll">
+          <div class="video-quote-media" data-lightbox-src="assets/videos/f20e996c201556d703a0d6cacd2e8c79_720w.mp4" data-lightbox-type="video" data-lightbox-caption="&ldquo;When life throws chaos at you, stay calm and keep dancing&rdquo; &bull; The Dancing Legend">
+            <video src="assets/videos/f20e996c201556d703a0d6cacd2e8c79_720w.mp4" poster="assets/videos/posters/f20e996c201556d703a0d6cacd2e8c79_720w_poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+            <div class="video-play-hint">&#9654; Play with sound in Lightbox</div>
+          </div>
+          <div class="video-quote-body">
+            <span class="video-quote-tag">&#128010; Unbothered Philosophy</span>
+            <blockquote class="video-quote-text">
+              &ldquo;When life gets unexpected and wild, stay calm, find your rhythm, and just keep dancing.&rdquo;
+            </blockquote>
+            <div class="video-quote-author">~ The Dancing Legend &#128010;&#10024;</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         SECTION 13: MY DREAMS SECTION
+         ========================================== -->
+    <section class="dreams-section" id="dreams">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">&#10024; Tomorrow</span>
+        <h2 class="section-title">The Life I Want To Build</h2>
+      </div>
+
+      <div class="dreams-card reveal-on-scroll">
+        <ul class="dreams-list">
+          <li>&ldquo;I don't have everything figured out yet.&rdquo;</li>
+          <li>&ldquo;But I know I want to build something meaningful.&rdquo;</li>
+          <li>&ldquo;I want to grow.&rdquo;</li>
+          <li>&ldquo;I want to create.&rdquo;</li>
+          <li>&ldquo;I want to take care of the people I love.&rdquo;</li>
+          <li>&ldquo;I want to become stronger than the person I was yesterday.&rdquo;</li>
+        </ul>
+
+        <div class="dreams-footer">
+          &ldquo;This chapter is still being written.&rdquo;
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         THE COMPLETE ARCHIVE VAULT (FEATURING ALL REMAINING MEDIA)
+         ========================================== -->
+    <section id="archive">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">&#128451;&#65039; Complete Vault</span>
+        <h2 class="section-title">The Memory Archive</h2>
+        <p class="section-subtitle">Every photograph, every candid snapshot, every unrepeatable memory preserved forever.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/20260818_115204961_iOS.jpg" data-lightbox-caption="August 2026 &bull; Candid memory">
+          <img src="assets/images/thumbnails/20260818_115204961_iOS_thumb.jpg" alt="Candid memory" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Archive</span>
+            <div class="gallery-item-title">Candid Days</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/20260828_114659574_iOS.jpg" data-lightbox-caption="August 2026 &bull; Walking my path">
+          <img src="assets/images/thumbnails/20260828_114659574_iOS_thumb.jpg" alt="Walking my path" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Archive</span>
+            <div class="gallery-item-title">Everyday Moments</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/20260828_140029726_iOS.jpg" data-lightbox-caption="August 2026 &bull; Summer strolls">
+          <img src="assets/images/thumbnails/20260828_140029726_iOS_thumb.jpg" alt="Summer strolls" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Archive</span>
+            <div class="gallery-item-title">Summer Strolls</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/20260901_132928078_iOS.jpg" data-lightbox-caption="September 2026 &bull; A memory I want to keep">
+          <img src="assets/images/thumbnails/20260901_132928078_iOS_thumb.jpg" alt="September memory" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Archive</span>
+            <div class="gallery-item-title">September Sun</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/20260912_095738838_iOS.jpg" data-lightbox-caption="September 2026 &bull; Peaceful morning">
+          <img src="assets/images/thumbnails/20260912_095738838_iOS_thumb.jpg" alt="Peaceful morning" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Archive</span>
+            <div class="gallery-item-title">Peaceful Morning</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/IMG_0116.jpg" data-lightbox-caption="Youth reflections &bull; A memory I want to keep">
+          <img src="assets/images/thumbnails/IMG_0116_thumb.jpg" alt="Youth reflections" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Archive</span>
+            <div class="gallery-item-title">Reflections</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/IMG_0787.jpg" data-lightbox-caption="August 2023 &bull; Treasured memory">
+          <img src="assets/images/thumbnails/IMG_0787_thumb.jpg" alt="Treasured memory" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Archive</span>
+            <div class="gallery-item-title">Treasured Memory</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-on-scroll" data-lightbox-src="assets/images/VideoCapture_20211113-234336.jpg" data-lightbox-caption="13 November 2021 &bull; Birthday night capture">
+          <img src="assets/images/thumbnails/VideoCapture_20211113-234336_thumb.jpg" alt="Birthday capture" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Birthday 2021</span>
+            <div class="gallery-item-title">November 13th Night</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 13: YEARLY CHAPTER VAULT & TIME CAPSULE (LOCALSTORAGE - NO DATABASE NEEDED)
+         ========================================== -->
+    <section id="vault" class="capsule-vault-section">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">&#9203; Yearly Time Capsule</span>
+        <h2 class="section-title">Year-to-Year Chapter Vault</h2>
+        <p class="section-subtitle">
+          From Chapter 24 to 25, 26 and beyond &mdash; save your birthday memories and wishes year by year, preserved forever in your personal vault.
+        </p>
+      </div>
+
+      <div class="capsule-vault-container reveal-on-scroll">
+        <div class="vault-controls-bar">
+          <div class="vault-status-indicator">
+            <span class="vault-dot"></span>
+            <span>Private Vault Active &bull; Saved Year-to-Year &bull; 100% Client-Side</span>
+          </div>
+          <div class="vault-action-buttons">
+            <button class="btn-vault-action" id="btn-add-year-memory">
+              &#9997;&#65039; Save Chapter Memory
+            </button>
+            <button class="btn-vault-secondary" id="btn-export-vault" title="Download JSON backup">
+              &#128229; Backup
+            </button>
+            <button class="btn-vault-secondary" id="btn-import-vault" title="Import JSON backup">
+              &#128228; Restore
+            </button>
+            <input type="file" id="vault-file-input" accept=".json" style="display: none;">
+          </div>
+        </div>
+
+        <!-- Yearly Chapter Cards Grid -->
+        <div class="yearly-cards-grid" id="yearly-cards-grid">
+          <!-- Populated by JavaScript from localStorage -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for Recording Yearly Memory -->
+    <div class="vault-modal" id="vault-modal">
+      <div class="vault-modal-card">
+        <button class="vault-modal-close" id="vault-modal-close">&times;</button>
+        <div class="vault-modal-title">
+          &#127874; Record Birthday Chapter Memory
+        </div>
+        <p class="vault-modal-sub">
+          Save your reflections for this chapter. Stored locally from year to year.
+        </p>
+
+        <form id="vault-memory-form">
+          <div class="vault-form-row">
+            <label for="vault-input-year">Birthday Year &bull; Age</label>
+            <select id="vault-input-year" class="vault-form-input">
+              <!-- Options populated by JS: 2026 (Age 24), 2027 (Age 25)... -->
+            </select>
+          </div>
+
+          <div class="vault-form-row">
+            <label for="vault-input-wish">Birthday Wish / Life Vision</label>
+            <textarea id="vault-input-wish" class="vault-form-textarea" placeholder="What are your biggest hopes and ambitions for this new chapter?" required></textarea>
+          </div>
+
+          <div class="vault-form-row">
+            <label for="vault-input-memory">Unforgettable Highlight of this Year</label>
+            <textarea id="vault-input-memory" class="vault-form-textarea" placeholder="What was the most special, funny, or proud moment of this year?"></textarea>
+          </div>
+
+          <div class="vault-form-actions">
+            <button type="submit" class="btn-enter" style="opacity:1; animation:none; width:100%; justify-content:center;">
+              &#128190; Save Memory to Vault
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SECTION 14: BIRTHDAY MESSAGE SECTION
+         ========================================== -->
+    <section id="birthday">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">&#127874; Milestone</span>
+        <h2 class="section-title">Happy Birthday, Chhim Putheara &#127874;</h2>
+      </div>
+
+      <div class="birthday-hero-card reveal-on-scroll">
+        <div class="featured-avatar-wrap" data-lightbox-src="assets/images/77169233606_avatar.jpg" data-lightbox-caption="Happy Birthday, Chhim Putheara &bull; 13 November 2002">
+          <img src="assets/images/77169233606_avatar.jpg" alt="Portrait of Chhim Putheara" class="featured-avatar">
+        </div>
+
+        <div class="hero-chapter-pill">CHHIM PUTHEARA &bull; 13 NOVEMBER 2002</div>
+
+        <div class="birthday-prose">
+          Another year has passed.<br><br>
+          I have changed. I have learned.<br>
+          I have lost. I have gained.<br>
+          I have laughed. I have struggled.<br><br>
+          <strong>But I am still here.</strong><br><br>
+          And that is something worth celebrating.<br><br>
+          <span class="gold-gradient-text" style="font-size: 1.6rem; font-weight: 600;">
+            Happy Birthday to me, Chhim Putheara.<br>
+            May the next chapter be bigger, wiser, kinder, and more meaningful.
+          </span>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           SECTION 15: MESSAGE TO MY FUTURE SELF
+           ========================================== -->
+      <div class="letter-envelope reveal-on-scroll">
+        <div class="wax-seal">CP</div>
+        
+        <h3 class="font-serif" style="font-size: 2.2rem; margin-bottom: 1.5rem; text-align: center; color: var(--gold-light);">
+          Dear Future Me,
+        </h3>
+
+        <div class="letter-body">
+          <p>
+            If you are reading this years from now, I hope you remember the person you were today.
+          </p>
+          <p>
+            Remember the dreams you had. Remember the people who supported you. Remember how hard you worked. And remember that you promised yourself to keep going.
+          </p>
+          <p>
+            I don't know where life will take me. But I hope I never stop trying.
+          </p>
+        </div>
+
+        <div class="letter-signoff">
+          See you in the next chapter.<br>
+          <span style="font-size: 1.6rem; color: var(--gold-primary); font-family: var(--font-serif); font-style: normal;">— Chhim Putheara</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 23: INTERACTIVE CANDLE & CAKE EASTER EGG
+         ========================================== -->
+    <section class="candle-section">
+      <div class="reveal-on-scroll">
+        <div class="candle-holder" id="candle-easter-egg">
+          <div class="candle-flame-wrap">
+            <div class="candle-flame" id="candle-flame"></div>
+            <div class="candle-smoke" id="candle-smoke"></div>
+          </div>
+          <div class="candle-wick"></div>
+          <div class="candle-stick"></div>
+          <div class="candle-base"></div>
+        </div>
+
+        <div class="candle-instruction">&#10024; Click the candle to blow out the flame and make a wish, Putheara &#10024;</div>
+        <div class="candle-wish-text" id="candle-wish-text"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 16: FINAL SCREEN
+         ========================================== -->
+    <section class="final-screen-section">
+      <div class="reveal-on-scroll">
+        <div class="final-date">13 &bull; 11 &bull; 2002</div>
+        
+        <p class="final-quote">
+          &ldquo;This is not the end of my story.<br>It's only another beginning.&rdquo;
+        </p>
+
+        <h2 class="final-birthday-heading gold-gradient-text">
+          HAPPY BIRTHDAY TO ME &#10084;&#65039;<br>
+          <span style="font-size: clamp(1.8rem, 4vw, 3rem); display: block; margin-top: 0.5rem; color: #ffffff;">CHHIM PUTHEARA</span>
+        </h2>
+
+        <div class="hero-chapter-pill" style="margin-top: 1rem;">
+          &mdash; 13 November &mdash;
+        </div>
+
+        <button class="btn-replay" id="btn-replay-story">
+          &#8635; Replay My Story
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       MODALS: LIGHTBOX & SECRET EASTER EGG
+       ========================================== -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close">&times;</button>
+      <img src="" alt="" id="lightbox-img" style="display: none;">
+      <video src="" controls id="lightbox-video" style="display: none;"></video>
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <div class="lightbox-modal" id="secret-modal">
+    <div class="secret-modal-card">
+      <h3 class="font-serif" style="font-size: 2rem; color: var(--gold-light); margin-bottom: 1rem;">
+        You found a secret. &#127881;
+      </h3>
+      <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;">
+        &ldquo;Keep going, Chhim Putheara. Your story isn't finished yet.&rdquo;
+      </p>
+      <button class="btn-enter" id="secret-modal-close" style="opacity: 1; animation: none;">
+        Continue My Journey &rarr;
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/audio_data.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

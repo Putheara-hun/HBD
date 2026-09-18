@@ -1,0 +1,108 @@
+/* ANIMATIONS & CINEMATIC EFFECTS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 15px rgba(229, 185, 114, 0.4), 0 0 30px rgba(229, 185, 114, 0.2);
+    box-shadow: 0 0 20px rgba(229, 185, 114, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 25px rgba(229, 185, 114, 0.8), 0 0 50px rgba(229, 185, 114, 0.4);
+    box-shadow: 0 0 35px rgba(229, 185, 114, 0.4);
+  }
+}
+
+@keyframes starTwinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes flameFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    filter: drop-shadow(0 0 10px #ff9800) drop-shadow(0 0 25px #ff5722);
+  }
+  25% {
+    transform: scale(1.05, 0.95) rotate(1.5deg);
+    filter: drop-shadow(0 0 14px #ffb74d) drop-shadow(0 0 30px #ff5722);
+  }
+  50% {
+    transform: scale(0.95, 1.05) rotate(-2deg);
+    filter: drop-shadow(0 0 8px #ff9800) drop-shadow(0 0 20px #ff7043);
+  }
+  75% {
+    transform: scale(1.03, 1) rotate(0.8deg);
+    filter: drop-shadow(0 0 16px #ffa726) drop-shadow(0 0 35px #ff5722);
+  }
+}
+
+@keyframes smokeRise {
+  0% {
+    opacity: 0.8;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60px) scale(2.2) translateX(10px);
+  }
+}
+
+@keyframes audioBarPulse {
+  0%, 100% { height: 4px; }
+  50% { height: 18px; }
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
